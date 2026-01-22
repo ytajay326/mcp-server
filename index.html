@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBERDUDEBIVASH MCP Server | Autonomous Cyber Defense</title>
+
+<meta name="description" content="CYBERDUDEBIVASH MCP Server – Autonomous Zero-Trust AI Cybersecurity Command Center">
+<meta name="author" content="CyberDudeBivash Pvt Ltd">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#04070d;
+  --panel:#0b1220;
+  --accent:#00e0ff;
+  --accent2:#4f9cff;
+  --text:#e6f1ff;
+  --muted:#8aa0c4;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{
+  background:radial-gradient(circle at top,#0b1220,#04070d);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* PARTICLES */
+canvas{position:fixed;inset:0;z-index:-1}
+
+/* HERO */
+.hero{padding:130px 20px 110px;text-align:center}
+.hero h1{font-size:3.2rem;font-weight:800}
+.hero h1 span{color:var(--accent)}
+.hero p{max-width:900px;margin:25px auto;color:var(--muted);font-size:1.15rem}
+.cta{margin-top:40px}
+
+.btn{
+  display:inline-block;padding:15px 30px;border-radius:8px;
+  font-weight:600;margin:8px;transition:.25s
+}
+.primary{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#001018;box-shadow:0 0 40px rgba(0,224,255,.35)
+}
+.primary:hover{transform:translateY(-2px)}
+.secondary{border:1px solid var(--accent);color:var(--accent)}
+
+/* SECTIONS */
+section{padding:90px 20px;max-width:1200px;margin:auto}
+.section-title{text-align:center;margin-bottom:60px}
+.section-title h2{font-size:2.4rem;font-weight:800}
+.section-title p{color:var(--muted);max-width:800px;margin:15px auto 0}
+
+/* TERMINAL */
+.terminal{
+  background:#02050b;border:1px solid rgba(0,224,255,.2);
+  border-radius:12px;padding:25px;
+  font-family:monospace;color:#00ffcc;
+  box-shadow:0 0 60px rgba(0,224,255,.15)
+}
+.terminal span{color:#8aa0c4}
+
+/* TOPOLOGY */
+.topology{position:relative;height:520px}
+.ring{
+  position:absolute;top:50%;left:50%;
+  width:360px;height:360px;margin:-180px;
+  border-radius:50%;
+  border:1px dashed rgba(0,224,255,.35);
+  animation:spin 30s linear infinite
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.node{
+  position:absolute;padding:14px 18px;border-radius:10px;
+  font-size:.85rem;font-weight:600;
+  background:#05080f;border:1px solid rgba(0,224,255,.3);
+  box-shadow:0 0 25px rgba(0,224,255,.25);
+  cursor:pointer;animation:pulse 3s infinite
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 15px rgba(0,224,255,.2)}
+  50%{box-shadow:0 0 35px rgba(0,224,255,.5)}
+  100%{box-shadow:0 0 15px rgba(0,224,255,.2)}
+}
+
+.core{
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#001018
+}
+.a1{top:5%;left:50%;transform:translateX(-50%)}
+.a2{top:50%;right:5%}
+.a3{bottom:5%;left:50%;transform:translateX(-50%)}
+.a4{top:50%;left:5%}
+.soc{top:20%;left:15%}
+.ti{top:20%;right:15%}
+.dev{bottom:15%;left:50%;transform:translateX(-50%)}
+
+/* ATTACK FLOWS */
+.attack,.response{
+  position:absolute;width:10px;height:10px;border-radius:50%;
+}
+.attack{background:#ff2b2b;box-shadow:0 0 20px rgba(255,50,50,.8);animation:attack 4s linear infinite}
+.response{background:#00ff9c;box-shadow:0 0 20px rgba(0,255,156,.8);animation:response 4s linear infinite}
+@keyframes attack{to{top:50%;left:50%;opacity:0}}
+@keyframes response{to{top:20%;left:80%;opacity:0}}
+
+/* METRICS */
+.metrics-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;margin-top:40px
+}
+.metric{
+  background:linear-gradient(180deg,#0b1220,#070b14);
+  padding:35px;border-radius:16px;text-align:center;
+  border:1px solid rgba(0,224,255,.08)
+}
+.metric h3{font-size:2.4rem;color:var(--accent)}
+.metric p{margin-top:10px;color:var(--muted)}
+
+/* INSPECTOR */
+#inspector{
+  position:fixed;top:0;right:-380px;width:360px;height:100vh;
+  background:#02050b;border-left:1px solid rgba(0,224,255,.25);
+  padding:30px;transition:.4s;z-index:999;overflow-y:auto
+}
+#inspector.active{right:0}
+#nodeData li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+
+/* KILL CHAIN */
+.killchain span{
+  padding:6px 10px;border-radius:6px;font-size:.75rem;
+  border:1px solid rgba(255,255,255,.15);opacity:.4
+}
+.killchain span.active{
+  opacity:1;color:#00ff9c;border-color:#00ff9c;
+  box-shadow:0 0 15px rgba(0,255,156,.6)
+}
+
+/* MITRE */
+.mitre-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;margin-top:40px
+}
+.tech{
+  padding:18px;text-align:center;border-radius:10px;
+  background:#070b14;border:1px solid rgba(255,255,255,.08);
+  color:#8aa0c4;opacity:.4
+}
+.tech.active{
+  opacity:1;color:#00ff9c;border-color:#00ff9c;
+  box-shadow:0 0 25px rgba(0,255,156,.5)
+}
+
+/* AUTOPLAY */
+.autoplay{
+  position:fixed;bottom:30px;right:30px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#001018;padding:14px 18px;border-radius:50px;
+  font-weight:700;cursor:pointer;z-index:1000
+}
+
+footer{
+  background:#02050b;padding:50px 20px;text-align:center;
+  color:var(--muted);font-size:.9rem
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="hero">
+  <h1>The Autonomous <span>Cyber Defense</span> Brain</h1>
+  <p><strong>CYBERDUDEBIVASH MCP Server</strong> — Zero-Trust AI command center unifying SOC, Red Team, TI, malware & DevSecOps.</p>
+  <div class="cta">
+    <a href="mailto:iambivash@cyberdudebivash.com" class="btn primary">Request Demo</a>
+    <a href="#topology" class="btn secondary">View Live System</a>
+  </div>
+</div>
+
+<section id="topology">
+  <div class="section-title">
+    <h2>Autonomous Defense Topology</h2>
+    <p>Click any node to inspect.</p>
+  </div>
+
+  <div class="topology">
+    <div class="ring"></div>
+
+    <div class="node core" data-node="core">MCP CORE</div>
+    <div class="node a1" data-node="agent">AI Agent</div>
+    <div class="node a2" data-node="agent">AI Agent</div>
+    <div class="node a3" data-node="agent">AI Agent</div>
+    <div class="node a4" data-node="agent">AI Agent</div>
+    <div class="node soc" data-node="soc">SOC</div>
+    <div class="node ti" data-node="ti">Threat Intel</div>
+    <div class="node dev" data-node="dev">DevSecOps</div>
+
+    <div class="attack" style="top:5%;left:50%"></div>
+    <div class="attack" style="top:50%;right:5%"></div>
+    <div class="response" style="top:50%;left:50%"></div>
+  </div>
+</section>
+
+<section id="metrics">
+  <div class="section-title">
+    <h2>Live Defense Metrics</h2>
+  </div>
+  <div class="metrics-grid">
+    <div class="metric"><h3 id="threats">0</h3><p>Threats Blocked</p></div>
+    <div class="metric"><h3><span id="mttr">120</span>s</h3><p>MTTR</p></div>
+    <div class="metric"><h3 id="actions">0</h3><p>Autonomous Actions</p></div>
+    <div class="metric"><h3 id="agents">12</h3><p>Agents Active</p></div>
+  </div>
+</section>
+
+<section id="mitre">
+  <div class="section-title">
+    <h2>MITRE ATT&CK Coverage</h2>
+  </div>
+  <div class="mitre-grid">
+    <div class="tech" data-tech="recon">Recon</div>
+    <div class="tech" data-tech="weapon">Weaponize</div>
+    <div class="tech" data-tech="deliver">Delivery</div>
+    <div class="tech" data-tech="exploit">Exploit</div>
+    <div class="tech" data-tech="lateral">Lateral</div>
+    <div class="tech" data-tech="c2">C2</div>
+    <div class="tech" data-tech="exfil">Exfil</div>
+  </div>
+</section>
+
+<div class="autoplay" id="autoplayBtn">▶ Autoplay Demo</div>
+
+<footer>
+  <strong>CYBERDUDEBIVASH®</strong><br>
+  Global Authority in AI Cybersecurity & Zero-Trust<br>
+  Bhubaneswar, Odisha, India © 2026
+</footer>
+
+<script>
+/* PARTICLES */
+const c=document.getElementById("particles"),x=c.getContext("2d");
+let w,h,p=[];
+function r(){w=c.width=innerWidth;h=c.height=innerHeight}
+onresize=r;r();
+for(let i=0;i<120;i++)p.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:2});
+(function d(){x.clearRect(0,0,w,h);x.fillStyle="#00e0ff";
+p.forEach(o=>{o.x+=o.vx;o.y+=o.vy;if(o.x<0||o.x>w)o.vx*=-1;if(o.y<0||o.y>h)o.vy*=-1;
+x.beginPath();x.arc(o.x,o.y,o.r,0,7);x.fill()});requestAnimationFrame(d)})();
+
+/* METRICS */
+let t=0,a=0,m=120;
+setInterval(()=>{t+=Math.random()*4|0;a+=Math.random()*6|0;m=Math.max(5,m-2);
+threats.innerText=t;actions.innerText=a;mttr.innerText=m},1500);
+
+/* AUTOPLAY */
+let ap=false,step=0;
+const steps=["recon","weapon","deliver","exploit","lateral","c2","exfil"];
+autoplayBtn.onclick=()=>{
+  ap=!ap;autoplayBtn.innerText=ap?"⏸ Autoplay":"▶ Autoplay Demo";
+  if(ap)setInterval(()=>{document.querySelectorAll(".tech").forEach(t=>t.classList.remove("active"));
+    document.querySelector(`[data-tech="${steps[step]}"]`).classList.add("active");
+    step=(step+1)%steps.length},2000);
+};
+</script>
+
+</body>
+</html>
